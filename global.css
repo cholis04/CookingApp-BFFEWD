@@ -350,6 +350,11 @@ main .main-content .box-list .item-list .details .action button:hover {
   background: none;
   border: none;
   outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.modal .box-modal .close-modal button:hover {
+  text-decoration: underline;
 }
 
 .modal .box-modal .content-modal {
@@ -358,7 +363,7 @@ main .main-content .box-list .item-list .details .action button:hover {
 
 .modal .box-modal .content-modal h4 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -395,11 +400,12 @@ main .main-content .box-list .item-list .details .action button:hover {
 }
 
 .modal .box-modal .content-modal .info h5 {
-  margin-bottom: 10px;
+  margin: 20px auto;
   text-align: center;
   font-size: 18px;
   color: var(--main-color);
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .modal .box-modal .content-modal .info ul.box-ingredients {

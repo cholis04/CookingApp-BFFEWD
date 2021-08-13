@@ -26,7 +26,7 @@ class ItemRecipe extends HTMLElement {
       const modalBoxElement = document.createElement('modal-box')
       modalBoxElement.recipe = recipe
       document.body.style.overflow = 'hidden'
-      document.body.appendChild(modalBoxElement)
+      document.body.insertBefore(modalBoxElement, document.body.firstChild)
     })
   }
 }
